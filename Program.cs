@@ -67,5 +67,4 @@ app.UseCors();
     app.UseSwagger();
     app.UseSwaggerUI();
 // }
-app.MapGet("/",()=>"Server API is running!");
 app.Run();
