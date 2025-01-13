@@ -1,5 +1,5 @@
 import axios from 'axios';
-axios.defaults.baseURL = 'http://localhost:5230/';
+axios.defaults.baseURL = process.env.API;
 const addErrorInterceptor= () => {
   axios.interceptors.response.use(
     (response) => {
@@ -8,7 +8,7 @@ const addErrorInterceptor= () => {
     },
     (error) => {
       console.error('Request error:', error.response ? error.response.status : error.message, error.response ? error.response.data : error);
-      return Promise.reject(error); // Important for error handling
+      return Promise.reject(error); 
     }
   );
 };
@@ -25,9 +25,7 @@ export default {
     const result = await axios({
       method: 'post',
       url: 'item',
-      data: {
-        name: name
-            }
+      data: {name: name}
     });
     console.log('add task- data', result.status) 
     return result.data;
