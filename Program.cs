@@ -62,9 +62,10 @@ await toDoDbContext.SaveChangesAsync(); // Very Important! Save the changes
 app.MapMethods("/options-or-head", new[] { "OPTIONS", "HEAD" }, 
                           () => "This is an options or head request ");
 app.UseCors();
-if (app.Environment.IsDevelopment())
-{
+// if (app.Environment.IsDevelopment())
+// {
     app.UseSwagger();
     app.UseSwaggerUI();
-}
+// }
+app.MapGet("/",()=>"Server API is running!");
 app.Run();
