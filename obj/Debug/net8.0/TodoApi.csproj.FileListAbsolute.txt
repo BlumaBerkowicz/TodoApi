@@ -133,3 +133,4 @@ D:\שנה ג\TodoApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\שנה ג\TodoApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\שנה ג\TodoApi\obj\Debug\net8.0\TodoApi.MvcApplicationPartsAssemblyInfo.cs
 D:\שנה ג\TodoApi\bin\Debug\net8.0\package-lock.json
+D:\שנה ג\TodoApi\obj\Debug\net8.0\TodoApi.sourcelink.json
