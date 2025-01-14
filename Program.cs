@@ -15,7 +15,7 @@ builder.Services.AddCors(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<ToDoDbContext>(options =>
-    options.UseMySql(builder.Configuration.GetConnectionString("ToDoDB"),
+    options.UseMySql(builder.Configuration.GetConnectionString("ToDoDBCloud"),
         ServerVersion.Parse("8.0.40-mysql")
 ));
 var app = builder.Build();
