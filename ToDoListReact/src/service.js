@@ -1,5 +1,5 @@
 import axios from 'axios';
-axios.defaults.baseURL = 'http://localhost:5230/';
+axios.defaults.baseURL = process.env.API;
 const addErrorInterceptor= () => {
   axios.interceptors.response.use(
     (response) => {
